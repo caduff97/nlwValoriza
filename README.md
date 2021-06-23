@@ -12,11 +12,11 @@
 
 - Cadastro de TAG
 
-  [ ] Não é permitido cadastrar mais de uma TAG com o mesmo node_modules
+  [ x ] Não é permitido cadastrar TAG sem nome
 
-  [ ] Não é permitido cadastrar TAG sem nome
+  [ x ] Não é permitido cadastrar mais de uma TAG com o mesmo nome
 
-  [ ] Não é permitido o cadastro por usuários que não sejam administradores
+  [ x ] Não é permitido o cadastro por usuários que não sejam administradores
 
 
 - Cadastro de elogios
