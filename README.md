@@ -1,28 +1,32 @@
 # NLW Valoriza
 
-Its a backend platform for create user, default tags and custom compliments.
-
-Where users can send compliments to each other, with an additional message.
+Its a backend platform to create users, default tags and custom compliments. Where users can send compliments to each other, with an additional message.
 
 ## Requirements
 
-Must have **yarn** package manager, **PostgreSQL** and **Git** installed in your machine.
+Must have [**yarn**](https://yarnpkg.com/) package manager, [**PostgreSQL**](https://www.postgresql.org/) and [**Git**](https://git-scm.com/) installed in your machine.
 
 ## Installation
 
-Clone the package to one directory in your machine
+1- Clone the package to one folder in your machine
 
 ```bash
 git clone https://github.com/caduff97/nlwValoriza
 ```
 
-Install all dependencies
+2 - Install all dependencies
 
 ```bash
 yarn
 ```
 
-Access the file **ormconfig.json** and set your PostgreSQL host, port, username, password and database.
+3 - Run database migrations
+
+```bash
+yarn typeorm migrations:run
+```
+
+4 - Access the file **ormconfig.json** and set your PostgreSQL host, port, username, password and database.
 
 ## Usage
 
