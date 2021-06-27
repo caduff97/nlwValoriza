@@ -1,25 +1,57 @@
 # NLW Valoriza
 
-## Regras
+Its a backend platform for create user, default tags and custom compliments.
 
-- Cadastro de usuário
+Where users can send compliments to each other, with an additional message.
 
-  [ x ] Não é permitido cadastrar mais de um usuário com o mesmo e-mail
+## Requirements
 
-  [ x ] Não é permitido cadastrar usuário sem e-mail
+Must have **yarn** package manager, **PostgreSQL** and **Git** installed in your machine.
 
-- Cadastro de TAG
+## Installation
 
-  [ x ] Não é permitido cadastrar TAG sem nome
+Clone the package to one directory in your machine
 
-  [ x ] Não é permitido cadastrar mais de uma TAG com o mesmo nome
+```bash
+git clone https://github.com/caduff97/nlwValoriza
+```
 
-  [ x ] Não é permitido o cadastro por usuários que não sejam administradores
+Install all dependencies
 
-- Cadastro de elogios
+```bash
+yarn
+```
 
-  [ x ] Não é permitido um usuário cadastrar um elogio para si
+Access the file **ormconfig.json** and set your PostgreSQL host, port, username, password and database.
 
-  [ x ] Não é permitido cadastrar elogios para usuários inválidos
+## Usage
 
-  [ x ] O usuário precisa estar autenticado na aplicação
+Run in development mode
+
+```bash
+yarn dev
+```
+
+## Rules
+
+- Users
+
+  [ x ] Users with the same name are not allowed.
+
+  [ x ] All users must have email.
+
+- Tags
+
+  [ x ] The tag must have a name.
+
+  [ x ] Tags with the same name are not allowed.
+
+  [ x ] Tags must only be created by admin users.
+
+- Compliments
+
+  [ x ] It's forbidden a user create a compliment for yourself.
+
+  [ x ] The user that's receive the compliment must exists.
+
+  [ x ] The user must be authenticated.
